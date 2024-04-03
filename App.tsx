@@ -1,9 +1,10 @@
-import { Text, View } from "react-native"
+import { SafeAreaView, Text, View } from "react-native"
+import { HelloWordScreen } from "./src/presentation/screens/HelloWordScreen"
 
 export const App = () => {
   return (
-    <View>
-     <Text>Hola Mundo</Text> 
-      </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <HelloWordScreen name="César Sánchez"/> 
+      </SafeAreaView>
   )
   }
